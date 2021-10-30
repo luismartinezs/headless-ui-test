@@ -14,7 +14,8 @@ export default {
 </script>
 
 <template>
-  <Switch
+  <Switch v-model="enabled">{{ enabled }}</Switch>
+  <!-- <Switch
     v-model="enabled"
     :class="enabled ? 'bg-yellow-900' : 'bg-yellow-700'"
     class="
@@ -53,5 +54,5 @@ export default {
         duration-200
       "
     />
-  </Switch>
+  </Switch> -->
 </template>

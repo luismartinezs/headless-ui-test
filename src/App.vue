@@ -1,16 +1,23 @@
 <script>
 import BaseSwitch from "@/components/BaseSwitch.vue";
+import BaseSwitchGroup from "@/components/BaseSwitchGroup.vue";
+import BaseDropdown from "@/components/BaseDropdown.vue";
 
 export default {
-  components: { BaseSwitch }
+  components: { BaseSwitch, BaseSwitchGroup, BaseDropdown },
 };
 </script>
 
 <template>
-  <div class="py-16">
+  <div class="flex flex-col space-y-4">
     <BaseSwitch />
+    <div>
+      <BaseSwitchGroup />
+    </div>
+    <BaseDropdown />
   </div>
 </template>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
